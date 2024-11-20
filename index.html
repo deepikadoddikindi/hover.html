@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            border: 5px solid;
+            height: 280px;
+            width: 565px;
+            background-color: black;
+        }
+        #div1{
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: aqua;
+        }
+        img{
+            border: 2px solid;
+            margin-left:40px;
+            margin-top:20px;
+        }
+        .h2{ 
+            margin-left: 20px;
+        }
+        .div2,.div5{
+            border: 2px solid;
+            height:20px;
+            width: 220px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+            white-space:nowrap ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: bisque;
+        }
+        .div3,.div6{
+            border: 2px solid;
+            margin-top: 20px;
+            background-color: bisque;
+            display:none
+        }
+        p{
+            margin-left:10px;
+        }
+        .div2:hover + .div3{
+               display: inline-block;
+        }
+        .div4{
+            border: 2px solid;
+            width: 250px;
+            height: 250px;
+            margin-left: 300px;
+            margin-top:-255px;
+            background-color: aqua;
+        }
+        .div5:hover + .div6{
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Hover on about:</h1>
+    <div class="div">
+    <div id="div1">
+        <img src="data:image/jpeg;base64,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" height="100"/>
+        <h3>
+            <ul>
+              <li>Virat Kholi</li>
+              <li>Indian Cricketer</li>
+            </ul></h3>
+       <div class="div2">A bout Virat Kholi;( born 5 November 1988) is an Indian international cricketer who plays Test and ODI cricket for the Indian national team. A former captain in all formats of the game, Kohli retired from the T20I format following India's win at the 2024 T20 World Cup. He's a right-handed batsman and an occasional unorthodox right arm quick bowler. Kohli holds the highest IPL run-scorer record, ranks second in T20I, third in ODI, and stands the fourth-highest in international cricket.
+       </div>
+    <div class="div3">
+        <p>Virat Kholi;( born 5 November 1988) is an Indian international cricketer who plays Test and ODI cricket for the Indian national team. A former captain in all formats of the game, Kohli retired from the T20I format following India's win at the 2024 T20 World Cup. He's a right-handed batsman and an occasional unorthodox right arm quick bowler. Kohli holds the highest IPL run-scorer record, ranks second in T20I, third in ODI, and stands the fourth-highest in international cricket.</p>
+    </div>
+    </div>
+    <div class="div4">
+       <img src="data:image/jpeg;base64,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" height="100"/>
+    <h3>
+        <ul>
+            <li>Sai Pallavi</li>
+            <li>Indian Actor</li>
+            </ul></h3>
+    <div class="div5">A bout Sai Pallavi Senthamarai Kannan (pronounced [saɪ paˈləvi]; born 9 May 1992)[2] is an Indian actress who predominantly works in Tamil and Telugu cinema in addition to Malayalam cinema.[3] She has received numerous accolades, including six Filmfare Awards South and two South Indian International Movie Awards. She was featured by Forbes magazine as one of India's 30 Under 30 in 2020.[4]
+    </div> 
+    <div class="div6">
+        <p>Sai Pallavi Senthamarai Kannan (pronounced [saɪ paˈləvi]; born 9 May 1992)[2] is an Indian actress who predominantly works in Tamil and Telugu cinema in addition to Malayalam cinema.[3] She has received numerous accolades, including six Filmfare Awards South and two South Indian International Movie Awards. She was featured by Forbes magazine as one of India's 30 Under 30 in 2020.[4]</p>
+    </div> 
+    </div>
+    </div>      
+</body>
+</html>
